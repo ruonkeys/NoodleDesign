@@ -1,0 +1,29 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script src="ckeditor/ckeditor.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<p><b>HEY INSERT HERE YOUR NEW RECORDS</b></p>
+<form action="">
+Enter ID:<br>
+<input type="text" name="one"><br>
+Enter Author's name:<br>
+<input type="text" name="two"><br>
+Enter Blog title:<br>
+<input type="text" name="three"><br>
+Enter Blog Content:<br>
+<textarea id="content" name="content">
+
+</textarea><br>
+<script>
+CKEDITOR.replace( 'content',{} );
+</script>
+ 
+</form>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* CSS Document */
+.one
+{
+	background-color:#e2e2e2;
+	height:3px;
+	width:100%;
+}
+.two_ul
+{
+	margin-left:40px;
+}
+.two_ul > li
+{
+	display:inline-block;
+	margin-left:25px;
+	margin-top:20px;
+	font-size:13px;
+}
+.three_ul > li
+{
+	display:inline-block;
+	margin-left:25px;
+	margin-top:10px;
+	font-size:13px;
+}
+.three_ul
+{
+	margin-left:300px;
+}
+.two_ul > li > a:link
+{
+	color:#B6B6B6;
+}
+.two_ul > li > a:hover
+{
+	color:#B6B6B6;
+}
+.two_ul > li > a:visited
+{
+	color:#B6B6B6;
+}
+.three_ul > li > a:link
+{
+	color:#B6B6B6;
+}
+.three_ul > li > a:hover
+{
+	color:#B6B6B6;
+}
+.three_ul > li > a:visited
+{
+	color:#B6B6B6;
+}
+.dec
+{
+	color:#b6b6b6;
+	font-size:11px;
+	text-align:center;
+}
+#foot
+{
+	margin-top:50px;
+	margin-bottom:20px;
+}
+

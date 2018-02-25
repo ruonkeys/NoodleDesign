@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Header</title>
+
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/font-awesome.css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<link rel="stylesheet" type="text/css" href="myCSS/headerDesgn.css" />
+
+<style>
+.mypop:before
+{
+	position: absolute;
+	content:'';
+	width:0;
+	height: 0;
+	border:8px solid transparent;
+	border-bottom-color:#fff;
+	right:10px;
+	top:-16px;
+}
+.mypop
+{
+	display:none;
+	position:absolute;
+	background-color:#fff;
+	right: 109px;
+	top:63px;
+	border: 1px solid #e5e5e5;
+}
+.mypop_ask_icon
+{
+	color:#00bfe7;
+	margin-right:5px;
+}
+.mypop_btn
+{
+	background-color:transparent;
+	color:#777;
+	font-size:15px;
+	padding-top:7px;
+	padding-bottom:7px;
+	padding-left:10px;
+	padding-right:10px;
+	border:1px solid #e5e5e5;
+	border-radius:4px;
+	margin-top:18px;
+	margin-left:15px;
+	margin-right:15px;
+	margin-bottom:10px;
+}
+.mypop_ul
+{
+	list-style-type:none;
+	margin-top:-10px;
+	margin-left:-40px;
+}
+.mypop_ul > li > a
+{
+	padding-left:20px;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+.mypop_ul > li:hover
+{
+	background-color:#00bfe7;
+}
+.mypop_ul > li:hover a:link
+{
+	color:#fff;
+}
+.mypop_ul > li:hover a:hover
+{
+	color:#fff;
+}
+.mypop_ul > li:hover a:visited
+{
+	color:#fff;
+}
+
+
+.mypop_ul > li
+{
+	padding-top:3px;
+}
+.mypop_ul > li > a:link
+{
+	text-decoration:none;
+	color:#8C8C8C;
+}
+.mypop_ul > li > a:hover
+{
+	text-decoration:none;
+	color:#8C8C8C;
+}
+.mypop_ul > li > a:active
+{
+	text-decoration:none;
+	color:#8C8C8C;
+}
+.mypop_ul > li > a:visited
+{
+	text-decoration:none;
+	color:#8C8C8C;
+}
+.mypop_ul > li > a
+{
+	display:block;
+	font-size:15px;
+	width:100%;
+}
+.ask_ques
+{
+	display:none;
+	width:700px;
+	background-color:#fff;
+	position:absolute;
+	top:0px;
+	left:325px;
+	z-index:2000;
+	border-radius:5px;
+	border:1px solid #e5e5e5;
+}
+.ask_ques_cntnr
+{
+	padding-left:35px;
+	padding-right:50px;
+	padding-bottom:30px;
+}
+.ask_ques_0
+{
+	text-align:right;
+}
+.ask_ques_0_0
+{
+	background-color:transparent;
+	border:none;
+	color:#e2e2e2;
+}
+.ask_ques_0_0:hover
+{
+	color:#777;
+}
+.ask_ques_1
+{
+	padding-top:35px;
+	padding-left:
+	width:80%;
+	font-size:24px;
+	font-weight:400;
+}
+.ask_ques_2
+{
+	height:5px;
+	width:100%;
+	background-color:#e5e5e5;
+	margin-top:15px;
+}
+.ask_ques_3
+{
+	font-size:16px;
+	margin-top:10px;
+}
+.ask_ques_4_inp
+{
+	
+	width:300px;
+	height:40px;
+	border-radius:5px;
+	border:1px solid #d0d0d0;
+	box-shadow:1px 1px 1px #d0d0d0 inset;
+	margin-top:5px;
+	padding-left:10px;
+}
+.ask_ques_5
+{
+	height:1px;
+	width:100%;
+	background-color:#e5e5e5;
+	margin-top:20px;
+}
+.ask_ques_6_txt
+{
+	height:127px;
+	border-radius:5px;
+	border:1px solid #d0d0d0;
+	box-shadow:1px 1px 1px #d0d0d0 inset;
+	padding-left:10px;
+	padding-top:5px;
+	width:100%;
+	resize:none;
+	margin-top:5px;
+}
+.ask_ques_7
+{
+	margin-top:30px;
+}
+.ask_ques_7_sp
+{
+	font-size:16px;
+	padding-left:5px;
+}
+.ask_ques_8
+{
+	margin-top:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<div class="container">
+<div class="h_ar1">
+<a href="#"><img src="noodleLogo.PNG" /></a>
+</div>
+
+<div class="h_ar2">
+<input type="text" placeholder="Find: calculus, schools, NYU" class="sr1" />
+<input type="text" placeholder="Near: address, city, state or zip" class="sr2" />
+<button type="button" class="bt1 btn btn-primary"><i class="fa fa-search"></i></button>
+</div>
+
+<!--///////////////////////////mypop/////////////////////////////////////////-->
+<div class="h_ar3">
+<button class="hmlnk" id="hm_btn">
+<div class="hmbrgr">
+<div class="hm1"></div>
+<div class="hm1"></div>
+<div class="hm1"></div>
+</div>
+</button>
+
+<div class="mypop" id="mypop_id">
+<button class="mypop_btn" onclick="quesDivShow()">
+<i class="fa fa-comments mypop_ask_icon"></i>Ask a question
+</button>
+<hr />
+<ul class="mypop_ul">
+  <li><a href="#">Sign In</a></li>
+  <li><a href="#">Sign Up</a></li>
+</ul>
+</div>
+
+</div>
+<!--///////////////////////////mypop/////////////////////////////////////////-->
+
+<script>
+$(document).ready(function(){
+	$('#hm_btn').click(function(){
+		$('#mypop_id').toggle();
+		});
+	});
+</script>
+
+
+<div class="clearfix"></div>
+</div>
+</div>
+
+<!--///////////////////////////ask question//////////////////////////////////-->
+
+<div class="ask_ques" id="ask_ques_id">
+  <div class="ask_ques_0">
+    <button class="ask_ques_0_0" onclick="quesDivHide()"><i class="fa fa-close"></i></button>
+  </div>
+  
+ <div class="ask_ques_cntnr">
+
+  <div class="ask_ques_1">
+  Ask a New Question
+  </div>
+  <div class="ask_ques_2"></div>
+  <div class="ask_ques_3">
+  Topic
+  </div>
+  <div class="ask_ques_4">
+  <input type="text" placeholder="Enter a topic" class="ask_ques_4_inp" id="ask_ques_4_inp_id"/>
+  </div>
+  <div class="ask_ques_5"></div>
+  <div class="ask_ques_3">
+  Your Question
+  </div>
+  <div class="ask_ques_6">
+  <textarea class="ask_ques_6_txt" rows="10" cols="40" placeholder="Ask your question" required="true" min-length="11" max-length="350"></textarea>
+  </div>
+  <div class="ask_ques_7">
+  <input type="checkbox" /> <span class="ask_ques_7_sp">Ask question anonymously</span>
+  </div>
+  <div class="ask_ques_2"></div>
+  <div class="ask_ques_8">
+  <button class="btn btn-primary">Continue</button>
+  <button class="btn btn-default">Cancel</button>
+  </div>
+  
+ </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    $('#ask_ques_4_inp_id').focus(function(){
+		 $(this).css({
+					"border-color":"#00bfe7",
+					"box-shadow":"0px 0px 3px #00bfe7"
+				});
+	
+				$('#ask_ques_4_inp_id').blur(function(){
+			    $(this).css({
+					"border-color":"#d0d0d0",
+					"box-shadow":"1px 1px 1px #d0d0d0 inset"
+				});
+			});
+		});
+		
+    $('.ask_ques_6_txt').focus(function(){
+		$(this).css({
+			"border-color":"#b92b27",
+			"box-shadow":"0px 0px 3px #b92b27"
+		});
+		
+		$('.ask_ques_6_txt').blur(function(){
+			$(this).css({
+				"border":"1px solid #d0d0d0",
+	            "box-shadow":"1px 1px 1px #d0d0d0 inset"
+				});
+			});
+	});
+});
+
+function quesDivShow()
+{
+	var obj=document.getElementById("ask_ques_id");
+	obj.style.display="block";
+}
+function quesDivHide()
+{
+	var obj=document.getElementById("ask_ques_id");
+	obj.style.display="none";
+}
+</script>
+
+<!--///////////////////////////ask question//////////////////////////////////-->
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Article</title>
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/font-awesome.css" />
+<link rel="stylesheet" href="css/jqm.css" />
+<script src="js/jqm.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jq.js"></script>
+<link rel="stylesheet" type="text/css" href="myCSS/counselorDesgn.css" />
+<link rel="stylesheet" type="text/css" href="myCSS/articleDesgn.css" />
+<script src="w3data.js"></script>
+
+</head>
+
+<body>
+
+<div w3-include-html="header.html" class="menu_fx"></div>
+<script>
+w3IncludeHTML();
+</script>
+
+<div><img src="ndlbgd.PNG" class="bgimg" /></div>
+
+<div class="container cntCntr">
+<div class="lft">
+   <div class="lft_cn0">
+     <a href="#" class="lft_lnk0">Home</a>
+     <i class="fa fa-angle-double-right"></i> Articles
+   </div>
+   
+ <div class="lft_cntr">
+    <div class="lft_cn1">
+      Refine
+    </div>
+
+   <div class="lft_cn2"></div>
+
+    <div class="lft_cn3">
+       <span class="lft_cn3_1">     
+        <a href="#" class="lft_cn3_ln1" id="lft_ln_id"><i class="fa fa-caret-down"></i> Author</a>
+       </span>
+        <div class="lft_cn3_2" id="lft_inp_id">
+         <input list="contents" placeholder="Type or click here" class="lft_cn3_inp1_art" />
+           <datalist id="contents">
+             <option value="Abbie Mood (5)" />
+             <option value="Adam (15)" />
+             <option value="John (20)" />
+             <option value="Alice (4)" />
+             <option value="James (15)" />
+             <option value="Corey (9)" />
+             <option value="Mark (10)" />
+             <option value="Alester (7)" />
+             <option value="Mick (11)" />
+             <option value="Mess (13)" />
+             <option value="Roy (9)" />
+           </datalist>
+        </div>
+        <option value="Abbie Mood (5)" />
+    </div>
+    <script>
+	    $(document).ready(function(){
+			$('#lft_ln_id').click(function(){
+				$('#lft_inp_id').toggle();
+				});
+			
+			$('.lft_cn3_inp1_art').focus(function(){
+			    $(this).css({
+					"border-color":"#00bfe7",
+					"box-shadow":"0px 0px 3px #00bfe7"
+				});
+			});
+			
+			$('.lft_cn3_inp1_art').blur(function(){
+			    $(this).css({
+					"border-color":"#d0d0d0",
+					"box-shadow":"0px 0px 0px #d0d0d0"
+				});
+			});
+			
+			});
+	</script>
+    
+ </div>    
+
+</div>
+
+<div class="mid">
+<div class="mid_cn0">
+Articles
+</div>
+
+
+<div class="mid_cn3 mid_cn3_padd">
+  <div class="mid_cn3_0">
+   <img src="free_birds_movie-1680x1050.jpg" height="80px" width="65px"/>
+   </div>
+     <div class="mid_cn3_1">
+      <div class="mid_cn3_1_0">
+        <span>
+          <a href="#" class="mid_cn3_ln1">To AP or Not to AP</a>
+          <button type="button" class="btn btn-default mid_cn3_btn1"><i class="fa fa-bookmark"></i> Save          </button>
+        </span>
+      </div>
+   <div class="mid_cn3_1_1">
+     <b>By Chris Teare</b>
+   </div>
+  <div class="mid_cn3_1_2">
+  Why do you need to take AP classes? So college admissions officers see that you have challenged yourself. Expert advice on which AP courses to take and how many to sign up for. 
+  </div>
+  <div class="mid_cn3_1_3">
+  <a href="#" class="mid_cn3_ln2">learn more</a>
+  </div>
+  
+   <div class="mid_cn3_1_5 top_brdr">
+     <span class="inftxt">TAGGED:</span>
+     <span class="mid_cn3_ln2_padd">
+     <a href="#" class="mid_cn3_ln2">AP Courses</a>,
+     <a href="#" class="mid_cn3_ln2">K-12 Education</a>,
+     <a href="#" class="mid_cn3_ln2">Applying to College</a>,
+     <a href="#" class="mid_cn3_ln2">College Applications</a>
+     </span>
+  </div>
+  
+  </div>
+    <div class="clearfix"></div>
+</div>
+
+</div>
+
+<div class="rgt">
+<div class="rgt_cn0">
+<button type="button" class="btn btn-default rgt_cn0_btn0"><i class="fa fa-bookmark bmkicn"></i> Save This Search</button>
+</div>
+
+
+</div>
+
+<div class="clearfix"></div>
+
+<div w3-include-html="footer.html"></div>
+</div>
+
+
+</body>
+</html>

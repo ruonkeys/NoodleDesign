@@ -1,0 +1,87 @@
+/* CSS Document */
+
+.header
+{
+	position:relative;
+	padding-top:10px;
+	background-color:#fff;
+    border-bottom: 1px solid #e2e2e2;
+    box-shadow: 5px 0px 10px #e5e5e5;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 65px;
+z-index:1500 !important;
+}
+.h_ar1
+{
+	width:3%;
+	float:left;
+}
+.h_ar2
+{
+	padding-top:5px;
+	padding-left:170px;
+	width:94%;
+	float:left;
+}
+.h_ar3
+{
+	width:3%;
+	float:left;
+}
+.clearfix
+{
+	clear:both;
+}
+.sr1
+{
+	width:310px;
+	height:34px;
+	border:1px solid #888888;
+	box-shadow:1px 1px 1px #e2e2e2 inset;
+	border-radius:4px;
+	opacity:0.5;
+}
+.sr2
+{
+	margin-left:12px;
+	width:310px;
+	height:34px;
+	border:1px solid #888888;
+	box-shadow:1px 1px 1px #e2e2e2 inset;
+	border-radius:4px;
+	opacity:0.5;
+}
+.bt1
+{
+	height:34px;
+	width:40px;
+	box-shadow:none;
+	border-color:#00bfe7;
+	background-color:#00bfe7;
+	margin-top:-2px;
+	margin-left:10px;
+}
+
+.hm1
+{
+	background-color:#666;
+	width:19px;
+	height:3px;
+	margin-top:3px;
+}
+.h_ar3
+{
+	padding-top:15px;
+}
+.hmlnk:hover .hm1
+{
+	background-color:#00bfe7;
+}
+.hmlnk
+{
+	border-color:transparent;
+	background-color:transparent;
+	position:relative;
+}
